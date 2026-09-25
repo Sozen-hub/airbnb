@@ -13,9 +13,17 @@ const CustomButton = ({text, route}: CustomButtonProps) => {
       router.push(route);
    };
    return (
-      <button className="px-10 py-3 bg-black text-white rounded-full" onClick={handleClick}>
-         {text}
+      <div className="flex flex-col gap-2 min-w-[160px]">
+      <button
+        onClick={handleClick}
+        className="w-[160px] h-[158px] bg-[#f7f7f7] rounded-2xl hover:bg-[#eeeeee] transition"
+      >
       </button>
+
+      <span className="text-[14px] text-black">
+        {text}
+      </span>
+    </div>
    )
 }
 

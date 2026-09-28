@@ -12,15 +12,17 @@ const CustomButton = ({text, route}: CustomButtonProps) => {
    const handleClick = () => {
       router.push(route);
    };
+
+
    return (
-      <div className="flex flex-col gap-2 min-w-[160px]">
+      <div className="flex flex-col gap-2 min-w-40">
       <button
         onClick={handleClick}
-        className="w-[160px] h-[158px] bg-[#f7f7f7] rounded-2xl hover:bg-[#eeeeee] transition"
+        className="w-[198.55px] h-[198.55px] bg-[#f7f7f7] rounded-2xl hover:bg-[#eeeeee] transition"
       >
       </button>
 
-      <span className="text-[14px] text-black">
+      <span className="text-[13px] text-[#222222] capitalize font-bold">
         {text}
       </span>
     </div>
